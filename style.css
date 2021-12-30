@@ -179,6 +179,7 @@ body {
 .section2 {
   background-color: black;
   color: white;
+  width: 100%;
 }
 
 .section2 h2 {
@@ -218,16 +219,20 @@ body {
   }
 }
 
-.section2 img {
-  display: block;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
+.section2 .imgs-flex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
+.section2 .imgs-flex img {
+  width: 20%;
+}
+
 @media screen and (max-width: 992px) {
-  .section2 img {
-    width: 95%;
+  .section2 .imgs-flex img {
+    width: 30%;
   }
 }
 
@@ -371,31 +376,24 @@ body {
   background-image: radial-gradient(circle at 100%, #2a4ea9, #ed217c, #ff9b71);
   color: white;
 }
+
 .section4 h2 {
-  padding-top: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  font-size: 2em;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 4em;
   line-height: 1.1em;
+  color: #2a4ea9;
+  width: 70%;
+  margin: 0 auto;
 }
-.section4 .title {
-  padding-top: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  font-size: 3em;
-  line-height: 1.1em;
-}
+
 @media screen and (max-width: 992px) {
   .section4 h2 {
-    width: 90%;
+    width: 100%;
     font-size: 2.7em;
   }
 }
-.section4 .title {
-  color: #2a4ea9;
-}
+
 .section4 .like {
   color: #2a4ea9;
 }
@@ -424,53 +422,33 @@ body {
 }
 
 .section5 {
-  background-color: #141414;
-  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
   padding-top: 100px;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
+  background-color: #141414;
 }
-.section5 h2 {
-  padding-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  font-size: 3em;
-  line-height: 1.1em;
-  color: #883baa;
+
+.section5 .img {
+  width: 20%;
 }
+
+.section5 h5 {
+  color: white;
+  text-align: center;
+}
+
+.section5 .img img {
+  width: 100%;
+}
+
 @media screen and (max-width: 992px) {
-  .section5 h2 {
-    width: 90%;
-    font-size: 2.7em;
+  .section5 img {
+    width: 30%;
   }
 }
 
-.section5 .text1 {
-  padding-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  font-size: 1.8em;
-  line-height: 1.1em;
-}
-@media screen and (max-width: 992px) {
-  .section5 .text1 {
-    width: 90%;
-  }
-}
-.section5 .text2 {
-  padding-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  font-size: 1.5em;
-  line-height: 1.1em;
-}
-@media screen and (max-width: 992px) {
-  .section5 .text2 {
-    width: 90%;
-  }
-}
 
 .section6 .hero-clip {
   overflow-x: hidden;
@@ -485,6 +463,22 @@ body {
   overflow-y: visible;
   background-image: linear-gradient(45deg, #2a4ea9, #9350a6, #ce5994, #f1747f, #ff9b71);
 }
+.section6 .hero h2 {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 4em;
+  line-height: 1.1em;
+  color: #2a4ea9;
+}
+.section6 .hero p {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2em;
+  font-size: 20px;
+  line-height: 1.5em;
+  color: white;
+}
 .section6 .hero-container.mac-window {
   max-width: 1000px;
 }
@@ -494,8 +488,8 @@ body {
 }
 .section6 .hero > .hero-container > img {
   width: 40%;
-  margin-top: -6.5em;
-  margin-bottom: -6em;
+  margin-top: -10.5em;
+  margin-bottom: -4em;
   margin-left: 30%;
 }
 
@@ -533,7 +527,6 @@ body {
     width: 90%;
   }
 }
-
 
 footer {
   text-align: center;
