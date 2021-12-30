@@ -1,0 +1,155 @@
+<!-- https://www.youtube.com/watch?v=wLUJ9VNzZXo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="fliingo.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Emergency Tracking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Comic+Neue:wght@300&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- <div class="spacer s0" id="trigger" class="trigger"></div> -->
+  <!-- <div class="intro">
+    <h1>Emergency Tracking</h1>
+    <img id="myimg" class="myimg" src="Rotato Frames E50CC3FD-F3BA-4D3F-8582-9966BBEC438E/Untitled Frame 1-min.png">
+    <img class="image-static" src="Rotato Frames E50CC3FD-F3BA-4D3F-8582-9966BBEC438E/Untitled Frame 1-min.png">
+  </div> -->
+  <section class="privacy-policy">
+    <h2><span class="intro1" data-translate="intro1"></span></h2>
+    <p data-translate="intro-paraph1"></p>
+    <!-- <img src="animation_500_kinl1ws5.gif" alt="travel"> -->
+  </section>
+
+  <section class="privacy-policy-dark">
+    <h2 data-translate="section2-title"></h2>
+    <p data-translate="section2-content"></p>
+  </section>
+
+  <section class="privacy-policy">
+    <h2 data-translate="section3-title"></h2>
+    <p data-translate="section3-content"></p>
+  </section>
+
+  <section class="privacy-policy-dark">
+    <h2 data-translate="section4-title"></h2>
+    <p data-translate="section4-content"></p>
+  </section>
+
+  <section class="privacy-policy">
+    <h2 data-translate="section5-title"></h2>
+    <p data-translate="section5-content"></p>
+  </section>
+
+  <!-- <section class="section7">
+    <h2 data-translate="section7-title"></h2>
+    <p data-translate="section7-content"></p>
+  </section> -->
+
+  <!-- <section class="section3">
+    <h2 data-translate="section3-title"></h2>
+    <p data-translate="section3-content"></p>
+    <div class="about-picture">
+      <small data-translate="section3-small-content"></small>
+    </div>
+  </section> -->
+
+  <footer>
+    <p>© Emergency Tracking Limited 2021</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+    integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
+    integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
+    integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <script src="preload.js"></script>
+  <script src="app.js"></script>
+
+
+  <script>
+    var dictionary = {
+      'intro1': {
+        'en': 'Terms of Use',
+        'fr': 'Conditions d\'utilisation',
+      },
+      'intro-paraph1': {
+        'en': 'EmergTrack Max. All subscriptions with Emergency Tracking Premium are handled by Apple. All payments handled by Apple, such as in-app purchases, can only be refunded by Apple and with Apple\'s consent. Please contact Apple for help with refunds.',
+        'fr': 'EmergTrack Max. Tous les abonnements avec Emergency Tracking Premium sont gérés par Apple. Tous les paiements traités par Apple, tels que les achats intégrés, ne peuvent être remboursés que par Apple et avec le consentement d\'Apple. Veuillez contacter Apple pour obtenir de l\'aide sur les remboursements.'
+      },
+      'section2-title': {
+        'en': 'Person you share your location with',
+        'fr': 'Personne avec qui vous partageez votre localisation'
+      },
+      'section2-content': {
+        'en': 'You are responsible for your own alert. Emergency Tracking will not be liable for the alert you sent to unwanted person. The purpose of our Service is uniquely to help you alert your friends of where you are in case of emergency. You are the only one responsible with sharing your location with others. Emergency Tracking will always display a specific information where you are actually sharing your location. The Service doesn\'t offer any type of refund in case of user\'s dissatisfaction regarding the shared location.',
+        'fr': 'Vous êtes responsable de votre propre alerte. Emergency Tracking ne sera pas responsable de l\'alerte que vous avez envoyée à une personne indésirable. Le but de notre Service est uniquement de vous aider à alerter vos amis de l\'endroit où vous vous trouvez en cas d\'urgence. Vous êtes le seul responsable du partage de votre position avec les autres. Le suivi d\'urgence affichera toujours une information spécifique où vous partagez réellement votre position. Le Service n\'offre aucun type de remboursement en cas d\'insatisfaction de l\'utilisateur concernant l\'emplacement partagé.'
+      },
+      'section3-title': {
+        'en': 'Accuracy of the location',
+        'fr': 'Précision de l\'emplacement'
+      },
+      'section3-content': {
+        'en': 'We are not responsible for the accuracy of the location of your GPS. We use Apple technology to get your location. Depending on the accuracy of the location you have chosen with Apple, we are able to display your location on the map more or less accurately. We try to update your location as quickly as possible. Depending on the number of users and the number of requests, the refresh rate of your location may change. We are not responsible for any inconvenience caused by this service. You use Emergency Tracking to help your contact find your location. We reserve the right in the event of overloading our service to reduce the update rate.',
+        'fr': 'Nous essayons de mettre à jour votre position le plus rapidement possible. Selon le nombre d\'utilisateurs et le nombre de demandes, le taux de rafraîchissement de votre emplacement peut changer. Nous ne sommes pas responsables des désagréments occasionnés par ce service. Vous utilisez le suivi d\'urgence pour aider votre contact à trouver votre position. Nous nous réservons le droit en cas de surcharge de notre service de réduire le taux de mise à jour.'
+      },
+      'section4-title': {
+        'en': 'Changes and amendments',
+        'fr': 'Changements et amendements'
+      },
+      'section4-content': {
+        'en': 'We reserve the right to modify this Agreement or its policies relating to the app or Services at any time, effective upon posting of an updated version of this Agreement on the app. When we do we will revise the updated date at the bottom of this page. Continued use of the app after any such changes shall constitute your consent to such changes.',
+        'fr': 'Nous nous réservons le droit de modifier le présent Contrat ou ses politiques relatives à l\'application ou aux Services à tout moment, à compter de la publication d\'une version mise à jour du présent Contrat sur l\'application. Lorsque nous le ferons, nous réviserons la date de mise à jour au bas de cette page. L\'utilisation continue de l\'application après de tels changements constituera votre consentement à ces changements.'
+      },
+      'section5-title': {
+        'en': 'Acceptance of these terms',
+        'fr': 'Acceptation de ces conditions'
+      },
+      'section5-content': {
+        'en': 'You acknowledge that you have read this Agreement and agree to all its terms and conditions. By using the app or its Services you agree to be bound by this Agreement. If you do not agree to abide by the terms of this Agreement, you are not authorized to use or access the app and its Services. Last Update of this contract: 30 December 2021',
+        'fr': 'Vous reconnaissez que vous avez lu le présent Accord et acceptez tous ses termes et conditions. En utilisant l\'application ou ses services, vous acceptez d\'être lié par le présent accord. Si vous n\'acceptez pas de respecter les termes du présent Contrat, vous n\'êtes pas autorisé à utiliser ou à accéder à l\'application et à ses Services. Dernière mise à jour de ce contrat: 30 Decembre 2021'
+      },
+      'section7-title': {
+        'en': 'Have fun using Emergency Tracking',
+        'fr': 'Have fun using Emergency Tracking'
+      },
+      'section7-content': {
+        'en': 'We are working hard to build more features.',
+        'fr': 'We are working hard to build more features.'
+      }
+    };
+    var langs = ['en', 'fr'];
+    var current_lang_index = 0;
+    var userLang = navigator.language || navigator.userLanguage;
+    var current_lang;
+    if (userLang.includes("fr"))
+      current_lang = langs[1];
+    else
+      current_lang = langs[0];
+    // window.change_lang = function () {
+    //   current_lang_index = ++current_lang_index % 2;
+    //   current_lang = langs[current_lang_index];
+    //   translate();
+    // }
+
+    function translate() {
+      $("[data-translate]").each(function () {
+        var key = $(this).data('translate');
+        $(this).html(dictionary[key][current_lang] || "N/A");
+      });
+    }
+    translate();
+  </script>
+
+</body>
+
+</html>
