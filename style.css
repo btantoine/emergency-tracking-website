@@ -494,7 +494,7 @@ body {
 }
 
 .section7 {
-  background-color: #141414;
+  background-image: linear-gradient(45deg, #ff9b71, #f1747f, #ce5994, #9350a6, #2a4ea9);
   color: white;
   padding: 50px;
   padding-bottom: 100px;
@@ -521,8 +521,8 @@ body {
   width: 120px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: white;
-  color: #190E32;
+  background-color: #352368;
+  color: white;
   border-radius: 5px;
   text-align: center;
 }
@@ -679,11 +679,45 @@ a:link {
   }
 }
 
-a {
+.bloc-siri {
+  background-color: #141414;
   color: white;
 }
 
-/* a:hover {
-  color: white;
-  text-decoration: underline;
-} */
+.bloc-siri h2 {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 4em;
+  line-height: 1.1em;
+  color: #2a4ea9;
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  .bloc-siri h2 {
+    width: 100%;
+    font-size: 2.7em;
+  }
+}
+
+.bloc-siri img {
+  width: 300px;
+  position: relative;
+  bottom: -60px;
+  left: 40%;
+}
+
+.bloc-siri .text1 {
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-size: 1.8em;
+  line-height: 1.1em;
+}
+@media screen and (max-width: 992px) {
+  .bloc-siri img {
+    left: 10%;
+  }
+}
