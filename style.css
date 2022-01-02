@@ -508,6 +508,25 @@ body {
   line-height: 1em;
   padding-top: 50px;
 }
+
+.section7 .set-of-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; 
+  margin-top: 50px;
+}
+
+.section7 a {
+  margin-left: 20px;
+  width: 120px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  color: #190E32;
+  border-radius: 5px;
+  text-align: center;
+}
+
 @media screen and (max-width: 992px) {
   .section7 h2 {
     width: 100%;
@@ -664,7 +683,7 @@ a {
   color: white;
 }
 
-a:hover {
+/* a:hover {
   color: white;
   text-decoration: underline;
-}
+} */
